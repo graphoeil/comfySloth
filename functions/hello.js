@@ -16,7 +16,8 @@ nous devons le déclarer dans le fichier netlify.toml */
 const items = [
 	{ id:1, name:'Cahouet' },
 	{ id:2, name:'Jambon' },
-	{ id:3, name:'Pataud' }
+	{ id:3, name:'Pataud' },
+	{ id:4, name:'Mushi' }
 ];
 exports.handler = async function(event, context){
 	// Nous retourons un objet
