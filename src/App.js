@@ -35,12 +35,6 @@ function App(){
 				</Route>
 				{/* AboutPage */}
 
-				{/* CartPage */}
-				<Route path="/cart" exact>
-					<CartPage/>
-				</Route>
-				{/* CartPage */}
-
 				{/* ProductsPage */}
 				<Route path="/products" exact>
 					<ProductsPage/>
@@ -50,6 +44,12 @@ function App(){
 				{/* SingleProductPage */}
 				<Route path="/products/:id" exact children={ <SingleProductPage/> } />
 				{/* SingleProductPage */}
+
+				{/* CartPage */}
+				<Route path="/cart" exact>
+					<CartPage/>
+				</Route>
+				{/* CartPage */}
 
 				{/* CheckoutPage, l'utilisateur doit être connecté
 				pour pouvoir accéder à la page de paiement */}
