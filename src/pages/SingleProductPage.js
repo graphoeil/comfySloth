@@ -50,7 +50,7 @@ const SingleProductPage = () => {
 		return <Loading/>
 	}
 	if (error){
-		return <Error redirect={ true }/>
+		return <Error redirect/>
 	}
 	// Variables
 	const { id:sku, name, price, description, stock, stars, 

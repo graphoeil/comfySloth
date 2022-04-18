@@ -9,10 +9,15 @@ const Error = ({ redirect }) => {
 
 	// Countdown
 	useEffect(() => {
-		if (timer >= 1){
-			setTimeout(() => {
+		let countDown;
+		if (timer >= 2){
+			countDown = setTimeout(() => {
 				setTimer(timer - 1);
 			},1000);
+		}
+		// Cleanup
+		return() => {
+			clearTimeout(countDown);
 		}
 	},[timer]);
 
