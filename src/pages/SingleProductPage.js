@@ -39,7 +39,7 @@ const SingleProductPage = () => {
 			setTimeout(() => {
 				// Redirection via history vers /
 				history.push('/');
-			},3000);
+			},5000);
 		}
 		// Il faut bien suivre error, 
 		// car error faut false à l'init
@@ -50,7 +50,7 @@ const SingleProductPage = () => {
 		return <Loading/>
 	}
 	if (error){
-		return <Error/>
+		return <Error redirect={ true }/>
 	}
 	// Variables
 	const { id:sku, name, price, description, stock, stars, 
