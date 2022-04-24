@@ -15,7 +15,7 @@ const AuthWrapper = ({ children }) => {
 		/* Nous aurions pu avoir une animation ici */
 		return(
 			<Wrapper>
-				<h1>Loading...</h1>
+				<div className="loading"></div>
 			</Wrapper>
 		);
 	}
