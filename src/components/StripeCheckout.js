@@ -119,7 +119,7 @@ const CheckoutForm = () => {
 				clearCart();
 				/* Paiement réussi, redirection vers la home */
 				history.push('/');
-			},10000);
+			},5000);
 		}
 	};
 
@@ -130,7 +130,7 @@ const CheckoutForm = () => {
 				succeeded ? <article>
 					<h4>Thank you</h4>
 					<h5>Your payment was successful !</h5>
-					<p>Redirecting to home page in 10 secondes.</p>
+					<p>Redirecting to home page in 5 seconds.</p>
 				</article> : <article>
 					<h4>Hello, { myUser && myUser.name }</h4>
 					<h5>Your total is { formatPrice(shippingFee + totalAmount) }</h5>
